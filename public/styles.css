@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: hsl(136, 21%, 38%);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+#root h1 {
+  color: hsl(24, 96%, 36%);
+  font-family: "McLaren", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+header {
+  background-color: hsl(135, 46%, 27%);
+  margin: auto -16px;
+  padding: 8px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header h1 {
+  color: hsl(24, 96%, 36%);
+  font-family: "McLaren", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+header h2 {
+  color: hsl(24, 96%, 36%);
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  text-align: right;
+}
+
+.editor-pane {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: hsl(225, 42%, 46%);
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(135, 68%, 42%);
+  color: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.btn-expand-collapse {
+  margin-left: 1rem;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.preview-pane {
+  height: 50vh;
+  background: #eee;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
